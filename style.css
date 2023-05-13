@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --quantidade: 5;
+  --timedelay: 1s;
+  --timeduration: 1s;
+  --timenext: 5s;
+}
+
+.page {
+  width: 144rem;
+  height: 102.4rem;
+  margin: 0 auto;
+}
+
+.fundo {
+  position: absolute;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+  top: 20rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 5.4rem;
+  row-gap: 5.6rem;
+
+  width: 105.4rem;
+
+  margin: auto;
+}
+
+.toupeira img {
+  position: absolute;
+}
+
+#anime4_1 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: var(--timedelay);
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+#anime4_2 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: calc((var(--timeduration) * 1) + var(--timedelay));
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+#anime4_3 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: calc((var(--timeduration) * 2) + var(--timedelay));
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+#anime4_4 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: calc((var(--timeduration) * 3) + var(--timedelay));
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+#anime4_5 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: calc((var(--timeduration) * 4) + var(--timedelay));
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+#anime6_1 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: calc(((var(--timeduration) * 5) + var(--timedelay)) + var(--timenext));
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+#anime6_2 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: calc(((var(--timeduration) * 6) + var(--timedelay)) + var(--timenext));
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+#anime6_3 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: calc(((var(--timeduration) * 7) + var(--timedelay)) + var(--timenext));
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+#anime6_4 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: calc(((var(--timeduration) * 8) + var(--timedelay)) + var(--timenext));
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+#anime6_5 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: calc(((var(--timeduration) * 9) + var(--timedelay)) + var(--timenext));
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+#anime11_1 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: calc(((var(--timeduration) * 10) + var(--timedelay)) + (var(--timenext) * 2));
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+#anime11_2 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: calc(((var(--timeduration) * 11) + var(--timedelay)) + (var(--timenext) * 2));
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+#anime11_3 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: calc(((var(--timeduration) * 12) + var(--timedelay)) + (var(--timenext) * 2));
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+#anime11_4 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: calc(((var(--timeduration) * 13) + var(--timedelay)) + (var(--timenext) * 2));
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+#anime11_5 {
+  animation-name: anime;
+  animation-duration: var(--timeduration);
+  animation-delay: calc(((var(--timeduration) * 14) + var(--timedelay)) + (var(--timenext) * 2));
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
